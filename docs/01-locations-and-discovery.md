@@ -42,6 +42,11 @@ The script that creates it lives at [`scripts/link-skills.ps1`](../scripts/link-
 [05-source-control.md](05-source-control.md) for when you'd re-run it (e.g., setting this repo up
 on a new machine).
 
+On Linux (or macOS), there's no junction/symlink distinction to worry about — a plain symlink needs
+no special privileges. Use [`scripts/link-skills.sh`](../scripts/link-skills.sh) instead, which
+makes `~/.claude/skills` a symlink to this repo's `skills/` folder with the same safety checks
+(no-op if already linked correctly, refuses to touch anything it didn't create).
+
 Once the junction exists, Claude Code sees `~/.claude/skills/hello-world/SKILL.md` exactly as if it
 were a real file there — it has no idea it's reading through a junction. Editing files under
 `D:\Workspace\projects\skills\skills\` immediately changes what Claude Code sees, live.
