@@ -22,7 +22,7 @@ The map is a single issue on this repo's issue tracker, labelled `wayfinder:map`
 
 The map is an **index**, not a store. It lists the decisions made and points at the tickets that hold their detail; a decision lives in exactly one place — its ticket — so the map never restates it, only gists it and links.
 
-The issue tracker should have been provided to you — run `/setup-repo-skills` if not. Consult the tracker doc's "Wayfinding operations" section for how _this_ repo expresses them. 
+The issue tracker can be found at `docs/agents/` folder. Consult the tracker doc's "Wayfinding operations" section for how _this_ repo expresses them. 
 
 ### The map body
 
@@ -103,6 +103,8 @@ Ruling something out of scope is a scoping act, not a step on the route. When a 
 
 Two modes. Either way, **never resolve more than one ticket per session** — with the exception of research tickets.
 
+**Precondition, before step 1 of either mode:** confirm `docs/agents/issue-tracker.md` exists. If it doesn't, stop and tell the user to run `/setup-repo-skills` first — do not improvise a tracker location or file convention.
+
 ### Chart the map
 
 User invokes with a loose idea.
@@ -111,7 +113,7 @@ User invokes with a loose idea.
 2. **Map the frontier.** Grill again, **breadth-first** this time: fan out across the whole space rather than deep on any one thread, surfacing the open decisions and the first steps takeable now. **If this surfaces no fog** — the way to the destination is already clear, the whole journey small enough for one session — you don't need a map. Stop and ask the user how they'd like to proceed.
 3. **Create the map** (label `wayfinder:map`): Destination and Notes filled in, Decisions-so-far empty, the fog sketched into **Not yet specified**.
 4. **Create the tickets you can specify now** as child issues of the map — then wire blocking edges in a **second pass** (issues need ids before they can reference each other). Wiring sorts them into the frontier and the blocked; everything you can't yet specify stays in the fog — the **Not yet specified** section.
-5. **Fire the research subagents.** For each `research` ticket you just created, spin up a `/research` subagent to resolve it in parallel, capturing its findings on a throwaway `research/<name>` branch with a context pointer from the ticket.
+5. **Fire the research subagents.** For each `research` ticket you just created, spin up a `/research` subagent to resolve it in parallel, capturing its findings on a throwaway `research/<name>` folder with a context pointer from the ticket.
 6. Stop — charting is one session's work; it hand-resolves nothing.
 
 ### Work through the map

@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 Break a plan, spec, or conversation into a set of **tickets** — tracer-bullet vertical slices, each declaring the tickets that **block** it.
 
-The issue tracker should have been provided to you — run `/setup-repo-skills` if not.
+**Precondition:** confirm `docs/agents/issue-tracker.md` exists. If it doesn't, stop and tell the user to run `/setup-repo-skills` first — do not improvise a tracker location or file convention.
 
 ## Process
 

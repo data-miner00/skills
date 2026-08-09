@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user — just synthesize what you already know.
 
-The issue tracker should have been provided to you — run `/setup-repo-skills` if not.
+**Precondition:** confirm `docs/agents/issue-tracker.md` exists. If it doesn't, stop and tell the user to run `/setup-repo-skills` first — do not improvise a tracker location or file convention.
 
 ## Process
 

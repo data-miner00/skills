@@ -33,7 +33,7 @@ Lead each section with the recommended answer so the user can accept it in a wor
 
 **Section A — Issue tracker.**
 
-The "issue tracker" is a markdown-oriented files & structured folder where issues are kept in this repo. Skills like `to-tickets` and `to-spec` read from and write to it — they need to write a markdown file under `.scratch/`. The issues live as files under `.scratch/<feature>/` in this repo.
+The issue tracker is a markdown-oriented files & structured folder where issues are kept in this repo. Skills like `to-tickets` and `to-spec` read from and write to it — they need to write a markdown file under `.scratch/`. The issues live as files under `.scratch/<feature>/` in this repo.
 
 **Section B — Domain docs.** — one `CONTEXT.md` + `docs/adr/` at the repo root. Write it without asking.
 
@@ -79,4 +79,4 @@ Then write the docs files using the seed templates in this skill folder as a sta
 
 ### 5. Done
 
-Tell the user the setup is complete and which engineering skills will now read from these files. Mention they can edit `docs/agents/*.md` directly later — re-running this skill is only necessary if they want to switch issue trackers or restart from scratch.
+Tell the user the setup is complete and which engineering skills will now read from these files. Mention they can edit `docs/agents/*.md` directly later — re-running this skill is only necessary if they want to restart from scratch.
