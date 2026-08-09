@@ -13,6 +13,7 @@ Two distinct kinds of item live here, in separate folders — don't mix them:
 - The spec is `.scratch/<feature-slug>/spec.md`
 - The map (from `/wayfinder`) is `.scratch/<feature-slug>/map.md`
 - Issues (from `/wayfinder`) are one file per issue at `.scratch/<feature-slug>/issues/<NN>-<slug>.md`, numbered from `01` — see "Wayfinding operations" below
+- Research findings (from `/research`, fired by `/wayfinder` for `research`-type issues) are one file per issue at `.scratch/<feature-slug>/research/<slug>.md`
 - Tickets (from `/to-tickets`) are one file per ticket at `.scratch/<feature-slug>/tickets/<NN>-<slug>.md`, numbered from `01` — never a single combined file
 - Triage state is recorded as a `Status:` line near the top of each file (`ready`/`in-progress`/`done` for tickets; `claimed`/`resolved` for issues — don't confuse the two vocabularies)
 - Comments and conversation history append to the bottom of the file under a `## Comments` heading
@@ -34,4 +35,5 @@ Used by `/wayfinder`. The **map** is a file with one **child** file per issue.
 - **Blocking**: a `Blocked by: NN, NN` line near the top. An issue is unblocked when every file it lists is `resolved`.
 - **Frontier**: scan `.scratch/<effort>/issues/` for files that are open, unblocked, and unclaimed; first by number wins.
 - **Claim**: set `Status: claimed` and save before any work.
+- **Research**: `.scratch/<effort>/research/<slug>.md` — one file per `research`-type issue, written by the `/research` subagent; the issue's context pointer links to it.
 - **Resolve**: append the answer under an `## Answer` heading, set `Status: resolved`, then append a context pointer (gist + link) to the map's Decisions-so-far in `map.md`.
