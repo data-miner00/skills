@@ -16,7 +16,7 @@ This skill takes the current conversation context and codebase understanding and
 
 Check with the user that these seams match their expectations.
 
-3. Write the spec using the template below, then publish it to the project issue tracker. 
+3. Write the spec using the template below, then publish it to the project issue tracker: `.scratch/<feature-slug>/spec.md`.
 
 <spec-template>
 
