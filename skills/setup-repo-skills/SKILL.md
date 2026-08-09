@@ -74,8 +74,8 @@ The block:
 
 Then write the docs files using the seed templates in this skill folder as a starting point:
 
-- [issue-tracker.md](./issue-tracker.md) — local-markdown issue tracker
-- [domain.md](./domain.md) — domain doc consumer rules + layout
+- [templates/issue-tracker.md](./templates/issue-tracker.md) — local-markdown issue tracker
+- [templates/domain.md](./templates/domain.md) — domain doc consumer rules + layout
 
 ### 5. Done
 

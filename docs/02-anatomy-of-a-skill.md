@@ -54,6 +54,8 @@ skills/
     ├── SKILL.md
     ├── references/
     │   └── api-format.md      # linked from SKILL.md, loaded only if needed
+    ├── templates/
+    │   └── config.md          # seed content copied into the target repo, then edited
     └── scripts/
         └── validate.py        # executed by Claude via Bash, never loaded into context
 ```
@@ -64,6 +66,9 @@ skills/
   knows to read them *only* when it actually needs that detail.
 - Keep references **one level deep** from `SKILL.md`. Don't chain references-that-link-to-references
   — Claude may not follow the chain, and it defeats the purpose of keeping context cost predictable.
+- **Template files** (`templates/*`) are seed content meant to be copied into the *target* repo and
+  adapted, not read by Claude for its own guidance. Use this when the skill's job is to scaffold
+  files elsewhere (docs, config, boilerplate) rather than to inform Claude's behavior in the moment.
 - **Scripts** are for anything deterministic — parsing, validation, transformation. Claude runs them
   with the Bash tool and reads only their *output*, not their source, which is far cheaper than
   asking Claude to reimplement the logic in-context every time. Put them in `scripts/`.
