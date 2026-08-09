@@ -8,6 +8,7 @@
 | [`grilling`](grilling/) | Auto (or `/grilling`) | Interviews the user relentlessly to stress-test a plan or decision, round by round. |
 | [`hello-world`](hello-world/) | User-only (`/hello-world`) | Onboarding greeting; explains this library. |
 | [`implement`](implement/) | User-only (`/implement`) | Implements a spec or set of tickets, using `/tdd` and `/code-review` along the way. |
+| [`pr-description`](pr-description/) | Auto (or `/pr-description`) | Drafts or updates a PR title/body from the branch's commits, diff, and originating spec/ticket. |
 | [`research`](research/) | Auto (or `/research`) | Background-agent research against primary sources, written up as a Markdown file. |
 | [`setup-repo-skills`](setup-repo-skills/) | User-only (`/setup-repo-skills`) | Scaffolds a repo's issue tracker and domain-doc conventions for the other skills. |
 | [`tdd`](tdd/) | Auto (or `/tdd`) | Red-green-refactor loop discipline: seams, good tests, and anti-patterns to avoid. |
