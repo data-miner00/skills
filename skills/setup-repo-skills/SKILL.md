@@ -31,7 +31,7 @@ Summarise what's present and what's missing. Then take the sections in order —
 
 Lead each section with the recommended answer so the user can accept it in a word. Give a one-line explainer only when the choice genuinely branches; skip the section entirely when exploration already settled it.
 
-**Section A — Issue tracker.**
+**Section A — Issue tracker.** Local markdown files. Write it without asking.
 
 The issue tracker is a markdown-oriented files & structured folder where issues are kept in this repo. Skills like `to-tickets` and `to-spec` read from and write to it — they need to write a markdown file under `.scratch/`. The issues live as files under `.scratch/<feature>/` in this repo.
 
