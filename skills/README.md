@@ -14,7 +14,7 @@
 | [`tdd`](tdd/) | Auto (or `/tdd`) | Red-green-refactor loop discipline: seams, good tests, and anti-patterns to avoid. |
 | [`to-spec`](to-spec/) | User-only (`/to-spec`) | Synthesizes the current conversation into a spec and publishes it to the issue tracker. |
 | [`to-tickets`](to-tickets/) | User-only (`/to-tickets`) | Breaks a plan or spec into tracer-bullet tickets with blocking edges, published to the issue tracker. |
-| [`wayfinder`](wayfinder/) | User-only (`/wayfinder`) | Plans large, foggy efforts as a shared map of decision tickets on the issue tracker. |
+| [`wayfinder`](wayfinder/) | User-only (`/wayfinder`) | Plans large, foggy efforts as a shared map of decision issues on the issue tracker. |
 
 Keep this table in sync with the folders in this directory — update it in the same commit you add,
 rename, or remove a skill. See [`../docs/06-folder-structure-reference.md`](../docs/06-folder-structure-reference.md)

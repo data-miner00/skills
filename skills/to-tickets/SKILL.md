@@ -57,7 +57,9 @@ Iterate until the user approves the breakdown.
 
 ### 5. Publish the tickets
 
-Publish the approved tickets to the local issue tracker. It should be provided by `/setup-repo-skills`. Write one file per ticket under `.scratch/<feature-slug>/issues/<NN>-<slug>.md`, numbered from `01` in dependency order (blockers first). Each file's "Blocked by" lists the numbers/titles it depends on. Use the per-ticket file template below — one ticket per file, never a single combined file.
+Publish the approved tickets to the local issue tracker. It should be provided by `/setup-repo-skills`. Write one file per ticket under `.scratch/<feature-slug>/tickets/<NN>-<slug>.md`, numbered from `01` in dependency order (blockers first). Each file's "Blocked by" lists the numbers/titles it depends on. Use the per-ticket file template below — one ticket per file, never a single combined file.
+
+Note: `tickets/` is this skill's own folder, distinct from `/wayfinder`'s `issues/` — a ticket is a build slice to execute, an issue is a decision to resolve. Don't mix the two into the same folder.
 
 Work the **frontier**: any ticket whose blockers are all done. For a purely linear chain that means top to bottom.
 
