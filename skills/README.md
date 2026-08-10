@@ -3,6 +3,7 @@
 | Skill | Trigger | Description |
 |---|---|---|
 | [`bulk-rename`](bulk-rename/) | Auto (or `/bulk-rename`) | Batch-renames files by a regex substitution, with a dry-run plan and collision detection. |
+| [`capturing-learnings`](capturing-learnings/) | User-only (`/capturing-learnings`) | Distills a reusable tool, command, or reasoning approach from the session into a learning note, appended to the active feature folder's `learnings.md` or `docs/learnings.md`. |
 | [`code-review`](code-review/) | Auto (or `/code-review`) | Two-axis review (Standards + Spec) of the diff since a fixed point, via parallel sub-agents. |
 | [`codebase-design`](codebase-design/) | Auto (or `/codebase-design`) | Shared vocabulary for designing deep modules — module, interface, seam, adapter, depth, leverage, locality. |
 | [`commit-message-helper`](commit-message-helper/) | Auto (or `/commit-message-helper`) | Drafts/validates a git commit message in Conventional Commits style. |
