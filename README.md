@@ -32,3 +32,5 @@ Read in order:
 - [`docs/`](docs/) — the guide above.
 - [`scripts/link-skills.ps1`](scripts/link-skills.ps1) — (re)creates the `~/.claude/skills` junction
   pointing at this repo's `skills/` folder.
+- [`tests/`](tests/) — tests for skill scripts, one subfolder per skill. See each skill's
+  `tests/<skill>/README.md` for how to run its tests.
