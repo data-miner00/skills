@@ -2,6 +2,7 @@
 
 | Skill | Trigger | Description |
 |---|---|---|
+| [`bulk-rename`](bulk-rename/) | Auto (or `/bulk-rename`) | Batch-renames files by a regex substitution, with a dry-run plan and collision detection. |
 | [`code-review`](code-review/) | Auto (or `/code-review`) | Two-axis review (Standards + Spec) of the diff since a fixed point, via parallel sub-agents. |
 | [`commit-message-helper`](commit-message-helper/) | Auto (or `/commit-message-helper`) | Drafts/validates a git commit message in Conventional Commits style. |
 | [`domain-modeling`](domain-modeling/) | Auto (or `/domain-modeling`) | Builds and sharpens the project's domain model — glossary terms and ADRs. |
@@ -15,6 +16,7 @@
 | [`to-spec`](to-spec/) | User-only (`/to-spec`) | Synthesizes the current conversation into a spec and publishes it to the issue tracker. |
 | [`to-tickets`](to-tickets/) | User-only (`/to-tickets`) | Breaks a plan or spec into tracer-bullet tickets with blocking edges, published to the issue tracker. |
 | [`wayfinder`](wayfinder/) | User-only (`/wayfinder`) | Plans large, foggy efforts as a shared map of decision issues on the issue tracker. |
+| [`whitespace-sweep`](whitespace-sweep/) | Auto (or `/whitespace-sweep`) | Sweeps text files for trailing whitespace and EOF-newline issues, check/apply style. |
 
 Keep this table in sync with the folders in this directory — update it in the same commit you add,
 rename, or remove a skill. See [`../docs/06-folder-structure-reference.md`](../docs/06-folder-structure-reference.md)
