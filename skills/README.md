@@ -6,6 +6,7 @@
 | [`code-review`](code-review/) | Auto (or `/code-review`) | Two-axis review (Standards + Spec) of the diff since a fixed point, via parallel sub-agents. |
 | [`commit-message-helper`](commit-message-helper/) | Auto (or `/commit-message-helper`) | Drafts/validates a git commit message in Conventional Commits style. |
 | [`domain-modeling`](domain-modeling/) | Auto (or `/domain-modeling`) | Builds and sharpens the project's domain model — glossary terms and ADRs. |
+| [`feature-pipeline`](feature-pipeline/) | User-only (`/feature-pipeline`) | Index of the build-a-feature skills — which one to reach for at each stage from idea to shipped code. |
 | [`grilling`](grilling/) | Auto (or `/grilling`) | Interviews the user relentlessly to stress-test a plan or decision, round by round. |
 | [`hello-world`](hello-world/) | User-only (`/hello-world`) | Onboarding greeting; explains this library. |
 | [`implement`](implement/) | User-only (`/implement`) | Implements a spec or set of tickets, using `/tdd` and `/code-review` along the way. |
