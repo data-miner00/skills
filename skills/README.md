@@ -13,6 +13,7 @@
 | [`hello-world`](hello-world/) | User-only (`/hello-world`) | Onboarding greeting; explains this library. |
 | [`implement`](implement/) | User-only (`/implement`) | Implements a spec or set of tickets, using `/tdd` and `/code-review` along the way. |
 | [`improve-codebase-architecture`](improve-codebase-architecture/) | User-only (`/improve-codebase-architecture`) | Scans a codebase for deepening opportunities, presents them as a visual HTML report, then grills through whichever one you pick. |
+| [`jargon-scan`](jargon-scan/) | User-only (`/jargon-scan`) | Scans the repo for confusing technical jargon, checklist-picks which to explain, appends definitions to `docs/tech-jargons.md`. |
 | [`pr-description`](pr-description/) | Auto (or `/pr-description`) | Drafts or updates a PR title/body from the branch's commits, diff, and originating spec/ticket. |
 | [`research`](research/) | Auto (or `/research`) | Background-agent research against primary sources, written up as a Markdown file. |
 | [`setup-repo-skills`](setup-repo-skills/) | User-only (`/setup-repo-skills`) | Scaffolds a repo's issue tracker and domain-doc conventions for the other skills. |
