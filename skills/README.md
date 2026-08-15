@@ -2,6 +2,7 @@
 
 | Skill | Trigger | Description |
 |---|---|---|
+| [`atomic-commits`](atomic-commits/) | Auto (or `/atomic-commits`) | Splits pending changes into a sequence of small, atomic git commits, hunk-split when a file spans multiple commits. |
 | [`bulk-rename`](bulk-rename/) | Auto (or `/bulk-rename`) | Batch-renames files by a regex substitution, with a dry-run plan and collision detection. |
 | [`capturing-learnings`](capturing-learnings/) | User-only (`/capturing-learnings`) | Distills a reusable tool, command, or reasoning approach from the session into a learning note, appended to the active feature folder's `learnings.md` or `docs/learnings.md`. |
 | [`code-review`](code-review/) | Auto (or `/code-review`) | Two-axis review (Standards + Spec) of the diff since a fixed point, via parallel sub-agents. |
